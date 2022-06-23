@@ -8,8 +8,8 @@ import { FooterComponent } from './commons/footer/footer.component';
 import { NotFoundComponent } from './commons/not-found/not-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
-import { ProductListComponent } from './pages/productsPage/product-list/product-list.component';
-import { ProductCardComponent } from './pages/productsPage/product-card/product-card.component';
+import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
+import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
 
 @NgModule({
   declarations: [
