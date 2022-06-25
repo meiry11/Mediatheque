@@ -1,5 +1,24 @@
-.cadi{
+.cadi-films{
     display: flex;
     justify-content: space-between;
-    
+    width: 900PX;
+   
+    margin: auto;
 }
+
+.cadi-albums{
+    display: flex;
+    justify-content: space-between;
+    width: 600PX;
+    margin: auto;
+}
+
+h4{
+    text-align: center;
+}
+
+.cadre{
+
+    padding-top: 5rem;
+    
+  }
