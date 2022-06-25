@@ -1,1 +1,22 @@
-<p>{{produitCard}}</p>
+
+
+<div class="card" style="width: 18rem">
+    <img [src]=produitCard.img class="card-img-top" alt="...">
+    <div class="card-body" >
+        <h5 class="card-title">{{produitCard.nom | slice : 0:10}}</h5>
+        <span *ngIf="produitCard.nom.length > 10">...</span>
+        <h6 *ngIf="produitCard.artiste"> {{produitCard.artiste}} </h6>
+        <h6 *ngIf="produitCard.real"> {{produitCard.real}} </h6>
+        <p class="card-text"*ngIf="produitCard.synopsis">
+            {{produitCard.synopsis | slice : 0:140}}
+        </p>
+        <a routerLink="/produitCard/{{produitCard.id}}" class="btn btn-primary">Détails</a>
+      
+        
+    </div>
+
+</div>
+
+
+
+
