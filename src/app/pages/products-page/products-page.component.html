@@ -1,19 +1,24 @@
+
+<div class="cadre">
+<div>
 <h4>Liste des films</h4>
-<div class="cadi">
+<div class="cadi-films">
 <div *ngFor="let film of films" >
  <app-product-list [detailArticle]="film"></app-product-list>   
 
 </div>
 </div>
-
+<div class="cadre-1">
 <h4>Listes des albums</h4>
-<div class="cadi">
+<div class="cadi-albums" >
 <div *ngFor="let album of albums" >
     <app-product-list [detailArticle]="album"></app-product-list>
     
 </div>
 
 
+</div>
+</div>
 </div>
 
     
