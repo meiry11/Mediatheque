@@ -12,7 +12,8 @@ import { ProductListComponent } from './pages/products-page/product-list/product
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductDeatilsComponent } from './pages/product-page/product-deatils/product-deatils.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FilmFormulaireComponent } from './pages/products-page/film-formulaire/film-formulaire.component';
 
 
 @NgModule({
@@ -27,11 +28,13 @@ import { ProductDeatilsComponent } from './pages/product-page/product-deatils/pr
     ProductCardComponent,
     ProductPageComponent,
     ProductDeatilsComponent,
+    FilmFormulaireComponent,
    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
