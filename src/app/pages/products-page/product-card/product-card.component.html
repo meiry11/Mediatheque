@@ -1,7 +1,8 @@
 
 
 <div class="card" style="width: 18rem "  >
-    <img [src]=produitCard.img class="card-img-top" alt="...">
+    <img *ngIf="produitCard.img != ''" mat-card-image src="{{produitCard.img}}" alt="Photo">
+    <img *ngIf="!produitCard.img" mat-card-image [src]="DEFAULT_IMG" alt="Photo">
     <div class="card-body" >
         <h5 class="card-title">{{produitCard.nom | slice : 0:10}}</h5>
         <span *ngIf="produitCard.nom.length > 10">...</span>
