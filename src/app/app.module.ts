@@ -10,6 +10,11 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductsPageComponent } from './pages/products-page/products-page.component';
 import { ProductListComponent } from './pages/products-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/products-page/product-card/product-card.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductDeatilsComponent } from './pages/product-page/product-deatils/product-deatils.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FilmFormulaireComponent } from './pages/products-page/film-formulaire/film-formulaire.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { ProductCardComponent } from './pages/products-page/product-card/product
     HomePageComponent,
     ProductsPageComponent,
     ProductListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    ProductPageComponent,
+    ProductDeatilsComponent,
+    FilmFormulaireComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
