@@ -1,5 +1,5 @@
 
-<div class="cadi">
-<app-product-card [produitCard]="detailArticle"></app-product-card>
+<div class="cadi" *ngFor="let product of detailArticle">
+<app-product-card [produitCard]="product"></app-product-card>
 
 </div>

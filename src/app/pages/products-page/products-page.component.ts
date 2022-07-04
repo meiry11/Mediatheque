@@ -1,7 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Film } from './models/Film.model';
-import { ProductsHttpService } from './services/products-http.service';
+
+import Film from 'src/app/models/Film.model';
+import { AlbumService } from 'src/app/services/album.service';
+import { FilmService } from 'src/app/services/film.service';
+
 
 @Component({
   selector: 'app-products-page',
@@ -10,13 +13,16 @@ import { ProductsHttpService } from './services/products-http.service';
 })
 export class ProductsPageComponent implements OnInit {
   films: Film [] = [];
-  albums:[] = [];
+ 
     
-  constructor(private service:ProductsHttpService) {
-    this.service.findAll().subscribe((Film) =>this.films=Film)
-   }
+  constructor(private filmService:FilmService, private albumService:AlbumService) {
+    
+  }
 
   ngOnInit(): void {
+    this.filmService.getFilms().subscribe((Film) =>this.films=Film)
+    
+    
   }
 
 }
